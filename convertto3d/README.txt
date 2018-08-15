@@ -1,0 +1,1 @@
+Converts a KML/KMZ to 3D by changing altitudemode of each placemark in the KML/KMZ file to absolute

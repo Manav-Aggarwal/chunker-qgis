@@ -1,0 +1,1 @@
+Verifies and copies images in a chunk to a specified folder. Also, added the ability to re-link image directories stored in chunks

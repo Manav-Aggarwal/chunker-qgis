@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SaveChunkDialogBase</class>
+ <widget class="QDialog" name="SaveChunkDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>755</width>
+    <height>603</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Save Chunk</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>731</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="save_chunk">
+    <attribute name="title">
+     <string>Save Chunk</string>
+    </attribute>
+    <widget class="QPushButton" name="verifyChunkButton">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>50</y>
+       <width>141</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Verify chunk data</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>16</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>671</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout3">
+      <item>
+       <widget class="QLabel" name="destinationFolderLabel">
+        <property name="text">
+         <string>Select Destination Folder: </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="destinationFolderPath"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="destinationFolderButton">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="copyImagesButton">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>140</y>
+       <width>141</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Copy Images</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>190</y>
+       <width>671</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="chunks">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>681</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="advanced">
+    <attribute name="title">
+     <string>Link Chunks</string>
+    </attribute>
+    <widget class="QWidget" name="horizontalLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>711</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout2">
+      <item>
+       <widget class="QComboBox" name="chunks_2"/>
+      </item>
+      <item>
+       <widget class="QComboBox" name="folders"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="verifyButton">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>130</y>
+       <width>151</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Verify and Link</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>711</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="chunkPath">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="chunkPathButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDialogButtonBox" name="button_box">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>570</y>
+     <width>161</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clearButton">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>530</y>
+     <width>131</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>320</y>
+     <width>671</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="midLineWidth">
+    <number>1</number>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustToContents</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>669</width>
+      <height>199</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="statusBar">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>280</y>
+     <width>671</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>----------------------------------------------------------</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>tabWidget</zorder>
+  <zorder>button_box</zorder>
+  <zorder>scrollArea</zorder>
+  <zorder>statusBar</zorder>
+  <zorder>clearButton</zorder>
+  <zorder>scrollArea</zorder>
+  <zorder>statusBar</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_box</sender>
+   <signal>accepted()</signal>
+   <receiver>SaveChunkDialogBase</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_box</sender>
+   <signal>rejected()</signal>
+   <receiver>SaveChunkDialogBase</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

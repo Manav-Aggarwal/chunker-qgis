@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/merge_layers" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
